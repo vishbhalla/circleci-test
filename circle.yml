@@ -10,3 +10,4 @@ deployment:
 test:
   post:
     - aws s3 ls s3://vishtest-kon-cloud/file1.$BUILD_NUM.txt
+
