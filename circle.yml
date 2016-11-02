@@ -2,8 +2,8 @@ deployment:
   prod:
     branch: master
     commands:
-      - aws s3 sync file1 s3://vishtest-kon-cloud/file1.$CIRCLE_BUILD_NUM.txt
+      - aws s3 cp file1 s3://vishtest-kon-cloud/file1.$CIRCLE_BUILD_NUM.txt
 
 test:
   post:
-    - aws s3 ls s3://vishtest-kon-cloud/
+    - aws s3 ls s3://vishtest-kon-cloud/file1.$CIRCLE_BUILD_NUM.txt
