@@ -1,14 +1,9 @@
-machine:
-  environment:
-    BUILD_NUM: ${CIRCLE_BUILD_NUM}
 deployment:
   prod:
     branch: master
     commands:
-      #- aws s3 cp file1 s3://vishtest-kon-cloud/file1.$BUILD_NUM.txt
       - touch /tmp/file1
 
 test:
   post:
-    #- aws s3 ls s3://vishtest-kon-cloud/file1.$BUILD_NUM.txt
     - ls -l /tmp/file1
