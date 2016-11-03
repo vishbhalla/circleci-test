@@ -1,8 +1,13 @@
-deployment:
-  prod:
-    branch: master
-    commands:
+dependencies:
+    override:
       - aws s3 cp ./file1 s3://vishtest-kon-cloud/file1
+      - ls -al
+
+#deployment:
+#  prod:
+#    branch: master
+#    commands:
+#      - aws s3 cp ./file1 s3://vishtest-kon-cloud/file1
 
 test:
   post:
