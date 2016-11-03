@@ -2,8 +2,8 @@ deployment:
   prod:
     branch: master
     commands:
-      - touch /tmp/file1
+      - /usr/bin/touch /tmp/file1
 
-#test:
-#  post:
-#    - ls -l /tmp/file1
+test:
+  post:
+    - ls -l /tmp/file1
