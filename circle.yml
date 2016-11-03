@@ -2,7 +2,7 @@ deployment:
   prod:
     branch: master
     commands:
-      - ./test-script.sh
+      - echo "hello" > /tmp/file1
 
 test:
   post:
