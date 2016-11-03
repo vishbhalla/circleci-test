@@ -1,8 +1,13 @@
-deployment:
-  prod:
-    branch: master
+dependencies:
+  pre:
     commands:
       - aws s3 cp ./file1 s3://vishtest-kon-cloud/file1
+
+#deployment:
+#  prod:
+#    branch: master
+#    commands:
+#      - aws s3 cp ./file1 s3://vishtest-kon-cloud/file1
 
 test:
   post:
