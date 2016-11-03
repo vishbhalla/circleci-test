@@ -2,8 +2,8 @@ deployment:
   prod:
     branch: master
     commands:
-      - echo hello > ./file1
+      - echo hello > ./file2
 
 test:
   post:
-    - ls ./file1
+    - ls ./file2
