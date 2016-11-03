@@ -2,8 +2,8 @@ deployment:
   prod:
     branch: master
     commands:
-      - echo "hello" > /tmp/file1
+      - touch /tmp/file1
 
-test:
-  post:
-    - ls -l /tmp/file1
+#test:
+#  post:
+#    - ls -l /tmp/file1
