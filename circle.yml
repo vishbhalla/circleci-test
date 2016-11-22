@@ -2,7 +2,7 @@ checkout:
   override:
     - git clone git@github.com:vishbhalla/test.git
     - cd test
-    - git git submodule update --init circleci-test
+    - git submodule update --init circleci-test
 
 dependencies:
   override:
