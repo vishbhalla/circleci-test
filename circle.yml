@@ -4,10 +4,11 @@ checkout:
     - cd test
     - git submodule update --init circleci-test
 
-dependencies:
-  override:
-    - aws s3 cp ./file1 s3://vishtest-kon-cloud/testing-branch/file1.$CIRCLE_BUILD_NUM
+#dependencies:
+#  override:
+#    - aws s3 cp ./file1 s3://vishtest-kon-cloud/testing-branch/file1.$CIRCLE_BUILD_NUM
 
 test:
   post:
-    - aws s3 ls s3://vishtest-kon-cloud/testing-branch/file1.$CIRCLE_BUILD_NUM
+#    - aws s3 ls s3://vishtest-kon-cloud/testing-branch/file1.$CIRCLE_BUILD_NUM
+    - true
